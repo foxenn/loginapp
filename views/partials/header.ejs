@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login app | <%= title %></title>
+</head>
+<body>
+	<header>
+		<a href="/">Home</a>
+
+		<% if(user){ %>
+		
+			<a href="/logout">Logout</a>
+
+		<% } else { %>
+
+			<a href="/login">Login</a>
+			<a href="/register">Register</a>
+
+		<% } %> 
+	</header>
+	<br><br>
